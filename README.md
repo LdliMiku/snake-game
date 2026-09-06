@@ -1,5 +1,10 @@
 # 🐍 Snake 贪吃蛇
 
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![pygame](https://img.shields.io/badge/pygame-2.6-informational)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Made with pygame](https://img.shields.io/badge/Made%20with-pygame-ff69b4)
+
 一个用 Python + pygame 写的贪吃蛇小游戏。**零图片素材**，画面全是用彩色方块画出来的 —— 特别适合用来学 pygame 入门。
 
 ## 玩法
