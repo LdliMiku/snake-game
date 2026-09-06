@@ -9,7 +9,7 @@ import pygame
 CELL = 20                  # 每个格子的边长（像素）
 GRID_W, GRID_H = 25, 25    # 横向、纵向各多少个格子
 WIDTH, HEIGHT = CELL * GRID_W, CELL * GRID_H   # 窗口尺寸
-FPS = 10                   # 速度：每秒蛇移动几格子
+FPS = 10                   # 基础速度（每秒几格）；分数越高，下面会动态加快
 
 # 颜色（R, G, B）
 BLACK  = (18, 18, 18)      # 背景
@@ -111,7 +111,7 @@ def main():
                                     HEIGHT // 2 + 10))
 
         pygame.display.flip()                      # 把刚才画的东西显示出来
-        clock.tick(FPS)                            # 控制速度
+        clock.tick(FPS + score)                   # 控制速度：分数越高越快（每分 +1）
 
     pygame.quit()
     sys.exit()
